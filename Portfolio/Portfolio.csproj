@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,22 +69,29 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
     <Content Include="partials\about.html" />
     <Content Include="partials\contact.html" />
     <Content Include="partials\home.html" />
     <Content Include="partials\services.html" />
     <Content Include="partials\projects.html" />
+    <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\lib\angular-route.js" />
+    <Content Include="Scripts\lib\angular-route.min.js" />
+    <Content Include="Scripts\lib\angular.js" />
+    <Content Include="Scripts\lib\angular.min.js" />
+    <Content Include="shared\footer.html" />
+    <Content Include="shared\nav.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="css\" />
     <Folder Include="images\" />
-    <Folder Include="Scripts\app\" />
-    <Folder Include="Scripts\lib\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
