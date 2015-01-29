@@ -73,6 +73,9 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
+    <Content Include="partials\sitemap.html" />
+    <Content Include="partials\privacy.html" />
+    <Content Include="partials\terms.html" />
     <Content Include="partials\about.html" />
     <Content Include="partials\contact.html" />
     <Content Include="partials\home.html" />
