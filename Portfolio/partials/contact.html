@@ -9,11 +9,18 @@
 <div class="col-xs-12 col-sm-6">
     <div class="form-group">
         <label class="control-label">Email Id</label>
-        <input type="email" class="form-control" placeholder="Enter your Email Id" name="emailId" ng-model="emailId" ng-required />
+        <input type="email" class="form-control" placeholder="Enter your Email Id" name="emailId" ng-model="emailId" required />
+        <span class="text-danger" ng-show="emailId.$dirty && emailId.$invalid">
+            <span ng-show="emailId.$error.required">Email is required.</span>
+            <span ng-show="emailId.$error.email">Invalid email address.</span>
+        </span>
     </div>
     <div class="form-group">
         <label class="control-label">Message</label>
-        <textarea class="form-control" name="message" placeholder="Enter message" ng-model=" message" ng-required></textarea>
+        <textarea class="form-control" name="message" placeholder="Enter message" ng-model="message" required="true"></textarea>
+        <span class="text-danger" ng-show="message.$dirty">
+            <span ng-show="message.$error.required">Message is required.</span>
+        </span>
     </div>
     <input type="button" class="btn btn-lg btn-primary" value="Send Message" ng-click="SendMessage()" />
 </div>

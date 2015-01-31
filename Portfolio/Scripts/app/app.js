@@ -8,7 +8,7 @@ var app = angular.module('portfolioApp', ['ngRoute'])
                     templateUrl: '/partials/about.html'
                 }).when('/contact', {
                     templateUrl: '/partials/contact.html',
-                    controller:'ContactController'
+                    controller: 'ContactController'
                 }).when('/projects', {
                     templateUrl: '/partials/projects.html'
                 }).when('/services', {
