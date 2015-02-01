@@ -60,6 +60,7 @@
     <Content Include="App_Data\Contacts.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\dipen.png" />
     <Content Include="images\linkedin-icon.png" />
     <Content Include="Scripts\app\controllers.js" />
     <Content Include="AppCode\ContactService.asmx" />
@@ -67,6 +68,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\DIPEN_Resume_2014_Web_Developer.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
