@@ -61,6 +61,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="images\dipen.png" />
+    <Content Include="images\github.png" />
     <Content Include="images\linkedin-icon.png" />
     <Content Include="Scripts\app\controllers.js" />
     <Content Include="AppCode\ContactService.asmx" />
