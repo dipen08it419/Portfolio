@@ -25,4 +25,9 @@ app.controller('ContactController', ['$scope','$http', function ($scope, $http) 
             alert('Please fill up the form.');
         }
     }
+}])
+.controller('NavigationController', ['$scope','$location',function ($scope, $location) {
+    $scope.isActive = function (path) {
+        return path === $location.path();
+    }
 }]);

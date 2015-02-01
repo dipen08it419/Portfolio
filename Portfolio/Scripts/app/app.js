@@ -1,9 +1,10 @@
 ﻿/// <reference path="../lib/angular.js" />
-
+$home = "";
 var app = angular.module('portfolioApp', ['ngRoute'])
             .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
                 $routeProvider.when('/', {
-                    templateUrl: '/partials/home.html'
+                    templateUrl: '/partials/home.html',
+                    $home:'home'
                 }).when('/about', {
                     templateUrl: '/partials/about.html'
                 }).when('/contact', {
