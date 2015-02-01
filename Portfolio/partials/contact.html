@@ -1,26 +1,55 @@
 ﻿<div class="page-header">
-    <h1>Contact</h1>
+    <h2>Contact</h2>
+</div>
+
+<div class="col-sm-12 breadcrumb">
+    <a href="/">Home</a> &gt; <a class="text-muted disabled" href="/contact">Contact</a>
 </div>
 
 <div class="col-xs-12 col-sm-6">
+    <address>
+        <h2>Dipen Shah</h2>
+        <strong>Toronto, ON Canada</strong>
+        <div class="form-group h4">
+            <span class="glyphicon glyphicon-inbox"></span> <a href="mailto:dipen08it419@gmail.com">dipen08it419@gmail.com</a>
+        </div>
+        <div class="form-group h4">
+            <span class="glyphicon glyphicon-earphone"></span> +1 (647)278-7694
+        </div>
+        <div class="form-group h4">
+            <span class="glyphicon">
+                <img src="images/linkedin-icon.png" alt="Linked In" />
+            </span> <a href="http://ca.linkedin.com/pub/dipen-shah/3a/33/18a" target="_blank">Dipen Shah</a>
+        </div>
 
+    </address>
 </div>
 
 <div class="col-xs-12 col-sm-6">
-    <div class="form-group">
-        <label class="control-label">Email Id</label>
-        <input type="email" class="form-control" placeholder="Enter your Email Id" name="emailId" ng-model="emailId" required />
-        <span class="text-danger" ng-show="emailId.$dirty && emailId.$invalid">
-            <span ng-show="emailId.$error.required">Email is required.</span>
-            <span ng-show="emailId.$error.email">Invalid email address.</span>
-        </span>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <span class="panel-title">Inquiry Form</span>
+        </div>
+        <div class="panel-body">
+            <form name="contactForm" novalidate>
+                <div class="form-group">
+                    <label class="control-label">Email Id</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email Id" name="emailId" ng-model="emailId" required="true" />
+                    <span ng-show="contactForm.emailId.$dirty && contactForm.emailId.$invalid">
+                        <span class="text-danger control-label" ng-show="contactForm.emailId.$error.required">Email is required.</span>
+                        <span class="text-danger control-label" ng-show="contactForm.emailId.$error.email">
+                            Invalid email address.</spanclass>
+                        </span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Message</label>
+                    <textarea class="form-control" name="message" placeholder="Enter message" ng-model="message" required="true"></textarea>
+                    <span class="text-danger control-label" ng-show="contactForm.message.$dirty && contactForm.message.$invalid">
+                        <span class="text-danger control-label" ng-show="contactForm.message.$error.required">Message is required.</span>
+                    </span>
+                </div>
+                <input type="button" class="btn btn-primary" value="Send Message" ng-click="SendMessage()" />
+            </form>
+        </div>
     </div>
-    <div class="form-group">
-        <label class="control-label">Message</label>
-        <textarea class="form-control" name="message" placeholder="Enter message" ng-model="message" required="true"></textarea>
-        <span class="text-danger" ng-show="message.$dirty">
-            <span ng-show="message.$error.required">Message is required.</span>
-        </span>
-    </div>
-    <input type="button" class="btn btn-lg btn-primary" value="Send Message" ng-click="SendMessage()" />
 </div>

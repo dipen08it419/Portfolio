@@ -31,6 +31,7 @@ namespace Portfolio
                 writer.WriteLine("Message:\t" + message);
                 writer.WriteLine("--------------------------------------------------------------------");
                 writer.Flush();
+                writer.Close();
                 return true;
             }
             catch (Exception ex)
