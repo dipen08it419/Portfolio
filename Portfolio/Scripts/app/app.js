@@ -1,4 +1,10 @@
-﻿/// <reference path="../lib/angular.js" />
+﻿
+//File: app.js
+//Author: Dipen Shah
+//Description: This script contains javascript code to register application module and to handle various paths of the web app.
+
+
+/// <reference path="../lib/angular.js" />
 $home = "";
 var app = angular.module('portfolioApp', ['ngRoute'])
             .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {

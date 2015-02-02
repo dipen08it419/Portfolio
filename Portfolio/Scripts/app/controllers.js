@@ -1,4 +1,8 @@
-﻿/// <reference path="../lib/angular.min.js" />
+﻿//File: app.js
+//Author: Dipen Shah
+//Description: This script contains javascript code to register various controller for the portfolio app.
+
+/// <reference path="../lib/angular.min.js" />
 
 var app = angular.module('portfolioApp');
 
