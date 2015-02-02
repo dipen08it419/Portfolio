@@ -60,9 +60,23 @@
     <Content Include="App_Data\Contacts.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\devsd_logo.png" />
     <Content Include="images\dipen.png" />
     <Content Include="images\github.png" />
+    <Content Include="images\google-plus.png" />
     <Content Include="images\linkedin-icon.png" />
+    <Content Include="images\linkedin.png" />
+    <Content Include="images\projects\BOB\bob_1.png" />
+    <Content Include="images\projects\BOB\bob_2.png" />
+    <Content Include="images\projects\BOB\bob_3.png" />
+    <Content Include="images\projects\ERP\erp_1.png" />
+    <Content Include="images\projects\ERP\erp_2.png" />
+    <Content Include="images\projects\ERP\erp_3.png" />
+    <Content Include="images\projects\LMS\lms_1.png" />
+    <Content Include="images\projects\WeMeet\wm_1.png" />
+    <Content Include="images\projects\WeMeet\wm_2.png" />
+    <Content Include="images\projects\WeMeet\wm_3.png" />
+    <Content Include="images\twitter.png" />
     <Content Include="Scripts\app\controllers.js" />
     <Content Include="AppCode\ContactService.asmx" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
