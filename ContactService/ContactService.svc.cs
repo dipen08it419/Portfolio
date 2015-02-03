@@ -2,29 +2,25 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Web;
-using System.Web.Script.Services;
-using System.Web.Services;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Web;
+using System.Text;
 
-namespace Portfolio
+namespace ContactService
 {
-    /// <summary>
-    /// Summary description for ContactService
-    /// </summary>
-    [WebService(Namespace = "http://tempuri.org/")]
-    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
-    [System.ComponentModel.ToolboxItem(false)]
-    [System.Web.Script.Services.ScriptService]
-    public class ContactService : System.Web.Services.WebService
+    public class ContactService : IContactService
     {
-
-        [WebMethod]
-        [ScriptMethod(UseHttpGet = false, ResponseFormat = ResponseFormat.Json)]
         public bool SaveContact(string emailId, string message)
         {
             try
             {
-                StreamWriter writer = File.AppendText(Server.MapPath("~/App_Data/Contacts.txt"));
+                if(!File.Exists(System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Contacts.txt")))
+                {
+                    File.Create(System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Contacts.txt")).Close();
+                }
+
+                StreamWriter writer = File.AppendText(System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Contacts.txt"));
                 writer.WriteLine("--------------------------------------------------------------------");
                 writer.WriteLine("Date:\t" + DateTime.Now.ToString());
                 writer.WriteLine("Email Id:\t" + emailId);

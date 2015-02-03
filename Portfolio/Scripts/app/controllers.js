@@ -10,7 +10,7 @@ app.controller('ContactController', ['$scope','$http', function ($scope, $http) 
     $scope.SendMessage = function () {
         if ($scope.emailId && $scope.message) {
             $http.post(
-                '/AppCode/ContactService.asmx/SaveContact',
+                './AppCode/ContactService.asmx/SaveContact',
                     {
                         emailId: $scope.emailId,
                         message: $scope.message
