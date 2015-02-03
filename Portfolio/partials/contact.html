@@ -44,8 +44,9 @@
                     <span ng-show="contactForm.emailId.$dirty && contactForm.emailId.$invalid">
                         <span class="text-danger control-label" ng-show="contactForm.emailId.$error.required">Email is required.</span>
                         <span class="text-danger control-label" ng-show="contactForm.emailId.$error.email">
-                            Invalid email address.</span>
+                            Invalid email address.
                         </span>
+                    </span>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Message</label>
@@ -55,6 +56,7 @@
                     </span>
                 </div>
                 <input type="button" class="btn btn-primary" value="Send Message" ng-click="SendMessage()" />
+                <!--<input type="submit" class="btn btn-primary" value="Send Message" />-->
             </form>
         </div>
     </div>

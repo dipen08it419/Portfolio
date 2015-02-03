@@ -7,30 +7,33 @@
 /// <reference path="../lib/angular.js" />
 $home = "";
 var app = angular.module('portfolioApp', ['ngRoute'])
-            .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-                $routeProvider.when('/dshah55/home', {
+            .config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', function ($routeProvider, $locationProvider, $sceDelegateProvider) {
+                $routeProvider.when('/home', {
                     templateUrl: 'partials/home.html',
                     $home:'home'
-                }).when('/dshah55/about', {
+                }).when('/about', {
                     templateUrl: 'partials/about.html'
-                }).when('/dshah55/contact', {
+                }).when('/contact', {
                     templateUrl: 'partials/contact.html',
                     controller: 'ContactController'
-                }).when('/dshah55/projects', {
+                }).when('/projects', {
                     templateUrl: 'partials/projects.html'
-                }).when('/dshah55/services', {
+                }).when('/services', {
                     templateUrl: 'partials/services.html'
                 })
-                .when('/dshah55/termsOfUse', {
+                .when('/termsOfUse', {
                     templateUrl: 'partials/terms.html'
                 })
-                .when('/dshah55/privacyPolicy', {
+                .when('/privacyPolicy', {
                     templateUrl: 'partials/privacy.html'
                 })
-                .when('/dshah55/sitemap', {
+                .when('/sitemap', {
                     templateUrl: 'partials/sitemap.html'
                 })
-                .otherwise({ redirectTo: '/dshah55/home' });
+                .otherwise({ redirectTo: '/home' });
 
                 $locationProvider.html5Mode({ enabled: true, requireBase: false });
+
+                //Enable cross domain calls
+                $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://aspspider.info/dipen08it419/**']);
             }]);

@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\site.css" />
     <Content Include="images\android.jpg" />
     <Content Include="images\devsd_logo.png" />
     <Content Include="images\dipen.png" />
